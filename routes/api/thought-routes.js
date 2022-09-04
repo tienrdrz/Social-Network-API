@@ -4,8 +4,8 @@ const {
     getAllThoughts,
     getThoughtById,
     createThought,
-    updateThoughtById,
-    deleteThoughtbyId
+    updateThought,
+    deleteThought
 } = require('../../controllers/thought-controller');
 
 //GET and POST requests w/ id
@@ -18,7 +18,7 @@ router
 router
     .route('/:id')
     .get(getThoughtById)
-    .put(updateThoughtById)
-    .delete(deleteThoughtbyId);
+    .put(updateThought)
+    .delete(deleteThought);
 
 module.exports = router;
