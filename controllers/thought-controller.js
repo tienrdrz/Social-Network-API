@@ -56,7 +56,7 @@ const thoughtController = {
         })
         .catch(err => res.status(400).json(err)); 
     },
-    //DEL to delete a thought by id
+    //DELETE a thought by id
     deleteThought({ params }, res) {
         Thought.findOneAndDelete({ _id: params.id })
         .then(dbThoughtData => {
@@ -67,5 +67,15 @@ const thoughtController = {
             res.json(dbThoughtData);
         })
         .catch(err => res.status(400).json(err));
+    },
+    //POST to add a new reaction
+    addReaction({ params }, res) {
+
+    },
+    //DELETE a reaction
+    deleteReaction({ params }, res) {
+        
     }
 };
+
+module.exports = thoughtController;

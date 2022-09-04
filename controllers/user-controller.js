@@ -70,6 +70,14 @@ const userController = {
             res.json(dbUserData);
         })
         .catch(err => res.status(400).json(err));
+    },
+    //POST to add a friend
+    addFriend({ params }, res) {
+
+    }, 
+    //DELETE to remove a friend
+    deleteFriend({ params }, res) {
+        
     }
 };
 
