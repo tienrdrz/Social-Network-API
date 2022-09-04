@@ -1,4 +1,4 @@
-const Reaction = require('./Reaction');
+const Reaction = require('./Thought');
 const Thought = require('./Thought');
 const User = require('./User');
 
