@@ -10,8 +10,6 @@
 
 ## Description
 
-Using node packages I created a back end server that would allow a user to get, delete, put, and post. After seeding a database all of these instances are tested and shown in the walkthrough video below.
-
 ## Usage
 
 ## Walkthrough Video
